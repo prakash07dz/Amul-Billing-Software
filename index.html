@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Amul Billing System</h1>
+        <div id="itemList">
+            <div class="item-row">
+                <span class="item-name">Amul Gold 500ml</span>
+                <input type="number" class="price" value="33.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Amul Buffalo 500ml</span>
+                <input type="number" class="price" value="36.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Amul Chhash 460ml</span>
+                <input type="number" class="price" value="15.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Banas Chaash 400ml</span>
+                <input type="number" class="price" value="10.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Taja 170ml</span>
+                <input type="number" class="price" value="10.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Amul Ghee cup 200g</span>
+                <input type="number" class="price" value="23.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Amul Ghee cup 85g</span>
+                <input type="number" class="price" value="10.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Amul Light Dahi Pouch 150g</span>
+                <input type="number" class="price" value="10.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Amul Masti Ghee 1kg</span>
+                <input type="number" class="price" value="10.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Amul Masti Ghee 5kg</span>
+                <input type="number" class="price" value="365.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Amul Light Ghee 5kg</span>
+                <input type="number" class="price" value="260.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Amul Gold 6ltr</span>
+                <input type="number" class="price" value="396.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+            <div class="item-row">
+                <span class="item-name">Amul Buffalo 6ltr</span>
+                <input type="number" class="price" value="432.00" readonly>
+                <input type="number" class="quantity" value="0" min="0">
+                <span class="total">0.00 &#8377;</span>
+            </div>
+        </div>
+        <div class="controls">
+            <button onclick="calculateTotal()">Calculate Total</button>
+            <button onclick="clearAll()">Clear All</button>
+        </div>
+        <div class="result">
+            <h2>Total Amount: <span id="totalAmount">0.00 &#8377;</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
